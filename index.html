@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-      
-       <link rel="manifest" href="./manifest.json">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>IT202 Fall 2019 - Final</title>
@@ -38,11 +36,6 @@
         <a class="mdc-list-item" href="#apod">
           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
           <span class="mdc-list-item__text">APOD</span>
-        </a>
-          
-           <a class="mdc-list-item" href="#canvas">
-          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
-          <span class="mdc-list-item__text">Canvas</span>
         </a>
           
         <a class="mdc-list-item" href="#settings">
@@ -264,10 +257,8 @@ function showPosition(position) {
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-//           center: {lat: 41.881832, lng: -87.623177},
-             var uluru = {lat: 41.881832, lng: -87.623177};
+          center: {lat: 41.881832, lng: -87.623177},
           zoom: 8
-            var marker = new google.maps.Marker({position: uluru, map: map}
         });
       }
     </script>
@@ -311,10 +302,10 @@ function showPosition(position) {
 </div>
        -->
     <script>
-              if ('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                         .register('./sw.js');
-              }
+              // if ('serviceWorker' in navigator) {
+              //   navigator.serviceWorker
+              //            .register('./sw.js');
+              // }
       
       </script>
 

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="manifest" href="./manifest.json">
+      
+       <link rel="manifest" href="./manifest.json">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>IT202 Fall 2019 - Final</title>
@@ -37,6 +38,11 @@
         <a class="mdc-list-item" href="#apod">
           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
           <span class="mdc-list-item__text">APOD</span>
+        </a>
+          
+           <a class="mdc-list-item" href="#canvas">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+          <span class="mdc-list-item__text">Canvas</span>
         </a>
           
         <a class="mdc-list-item" href="#settings">
@@ -258,8 +264,10 @@ function showPosition(position) {
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 41.881832, lng: -87.623177},
+//           center: {lat: 41.881832, lng: -87.623177},
+             var uluru = {lat: 41.881832, lng: -87.623177};
           zoom: 8
+            var marker = new google.maps.Marker({position: uluru, map: map}
         });
       }
     </script>
@@ -267,7 +275,32 @@ function showPosition(position) {
     async defer></script>
 
 
-  
+      <div class="mdc-card">
+  <div class="mdc-card__primary-action">
+    <div class="mdc-card__media mdc-card__media--square">
+      <div class="mdc-card__media-content">Title</div>
+    </div>
+    <!-- ... additional primary action content ... -->
+  </div>
+  <div class="mdc-card__actions">
+    <div class="mdc-card__action-buttons">
+      <button class="mdc-button mdc-card__action mdc-card__action--button">
+        <span class="mdc-button__label">View HD Image</span>
+           <img src="unnamed.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+                </div>
+
+      </button>
+      <button class="mdc-button mdc-card__action mdc-card__action--button">
+        <span class="mdc-button__label">Action 2</span>
+      </button>
+    </div>
+    <div class="mdc-card__action-icons">
+      <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
+      <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+    </div>
+  </div>
+</div>
       
 <!--       <div class="card">
   <img src="img_avatar.png" alt="Avatar" style="width:100%">
